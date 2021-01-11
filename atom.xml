@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Sirius1959.github.io</id>
     <title>Sirius1959&apos;s blog</title>
-    <updated>2021-01-10T15:08:14.559Z</updated>
+    <updated>2021-01-11T12:28:08.276Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Sirius1959.github.io"/>
     <link rel="self" href="https://Sirius1959.github.io/atom.xml"/>
@@ -11,44 +11,238 @@
     <icon>https://Sirius1959.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Sirius1959&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[测试案例]]></title>
+        <title type="html"><![CDATA[Git总结]]></title>
         <id>https://Sirius1959.github.io/post/ce-shi-an-li/</id>
         <link href="https://Sirius1959.github.io/post/ce-shi-an-li/">
         </link>
         <updated>2021-01-10T15:06:42.000Z</updated>
-        <content type="html"><![CDATA[<p>测试使用</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://Sirius1959.github.io/post/hello-gridea/</id>
-        <link href="https://Sirius1959.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+        <content type="html"><![CDATA[<h1 id="git">Git</h1>
+<p>根据自己的操作系统从Git官网下载对应的Git核心程序</p>
+<p>https://git-scm.com/downloads</p>
+<h2 id="一-版本控制">一、版本控制</h2>
+<h3 id="1-什么是版本控制">1、什么是版本控制？</h3>
+<p>版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术</p>
+<ul>
+<li>实现跨区域多人协同开发</li>
+<li>追踪和记载一个或者多个文件的历史记录</li>
+<li>组织和保护你的源代码和文档</li>
+<li>统计工作量</li>
+<li>并行开发、提高开发效率</li>
+<li>跟踪记录整个软件的开发过程</li>
+<li>减轻开发人员的负担，节省时间，同时降低人为错误</li>
+</ul>
+<p>简单的说就是用于管理多人协同开发项目的技术</p>
+<p>没有进行版本控制或版本控制本身缺乏正确的流程管理，在软件开发过程中将会引入很多问题，如软件代码的一致性、软件内容的冗余、软件过程的事物性、软件开发过程中的并发性、软件代码的安全性以及软件代码的整合问题</p>
+<h3 id="2-常见的版本控制工具">2、常见的版本控制工具</h3>
+<ul>
+<li><strong>Git</strong></li>
+<li><strong>SVN</strong>（Subversion）</li>
+<li><strong>CVS</strong>（Concurrent Versions System）</li>
+<li><strong>VSS</strong>（Micorosoft Visual SourceSafe）</li>
+<li><strong>TFS</strong>（Team Foundation Server）</li>
+<li>Visual Studio Online</li>
+</ul>
+<p>现在影响力最大并且使用最广泛的是Git和SVN</p>
+<h3 id="3-版本控制分类">3、版本控制分类</h3>
+<p>1.本地版本控制</p>
+<p>记录文件的每次跟新，可以对每个版本做一个快照，或是记录文件补丁文件，适合个人使用，例如RCS</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\本地版本控制.webp" style="zoom: 80%;" />
+<p>2.集中版本控制SVN</p>
+<p>所有数据都保存在服务器上，协同开发者从服务器上同步更新或者上传自己修改</p>
+<p>所有的版本数据都存放在服务器上，用户的本地只有自己以前所同步的版本，如果不联网的话，用户就看不到历史版本，也无法切换版厄本呢验证问题，或在不同分支工作。而且所有的数据都保存在单一的服务器上，有很大的风险，如果服务器损坏，这样就会丢失所有的数据，当然也可以定制备份，代表产品：SVN、CVS、VSS</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\集中版本控制.png" style="zoom:67%;" />
+<p>3.分布式版本控制Git</p>
+<p>所有版本信息仓库全部同步到本地的每个用户，这样就可以在本地查看所有版本历史，可以离线在本地提交，只需在连网时push到相应的服务器或其他用户那里。由于每个用户那里保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但这增加了本地存储空间的占用。</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\分布式版本控制.JPG" style="zoom:80%;" />
+<p>Git是目前世界上最先进的分布式版本控制系统</p>
+<h2 id="二-环境配置">二、环境配置</h2>
+<p>1、软件下载</p>
+<p>在官网下载git对应操作系统的版本：https://git-scm.com/downloads</p>
+<p>也可以使用淘宝镜像下载：http://npm.taobao.org/mirrors/git-for-windows/</p>
+<p>实际安装时没有特别需要事项，选择默认方式即可</p>
+<p>卸载：先清理相关的环境变量，然后卸载</p>
+<p>2、启动Git</p>
+<p>安装成功之后，开始菜单栏会有Git选项，菜单下有三个程序，任意文件夹右键也可以看到对应的程序</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5C18846%5CDesktop%5CSSM%E6%80%BB%E7%BB%93%5CGithub%E5%9B%BE%E7%89%87%5CGit%E9%80%89%E9%A1%B9.png" alt="" loading="lazy"></figure>
+<p>Git Bash：Unix与Linux风格的命令行，使用最多</p>
+<p>Git CMD：Windows风格的命令行</p>
+<p>Git GUI：图形界面的Git，不建议初学者使用这种方式</p>
+<p>3、常用Linux命令</p>
+<p>首先你在哪个文件夹打开Git，就会切到哪个文件夹</p>
+<ul>
+<li>cd: 改变目录</li>
+<li>cd ..：回退到上一个目录，直接cd进入默认目录</li>
+<li>pwd: 显示当前所在的目录路径</li>
+<li>ls(ll):  都是列出当前目录中的所有文件，只不过ll(两个ll)列出的内容更为详细</li>
+<li>touch : 新建一个文件 如 touch index.js 就会在当前目录下新建一个index.js文件</li>
+<li>rm:  删除一个文件, rm index.js 就会把index.js文件删除</li>
+<li>mkdir:  新建一个目录,就是新建一个文件夹</li>
+<li>rm -r:  删除一个文件夹, rm -r src 删除src目录 rm -rf / 切勿在Linux中尝试！删除电脑中全部文件！</li>
+<li>mv：移动文件, mv index.html src index.html 是我们要移动的文件, src 是目标文件夹,当然, 这样写,必须保证文件和目标文件夹在同一目录下</li>
+<li>reset：重新初始化终端/清屏</li>
+<li>clear：清屏</li>
+<li>history：查看命令历史</li>
+<li>help：帮助</li>
+<li>exit：退出</li>
+<li>#：表示注释</li>
+</ul>
+<p>4、Git配置</p>
+<p>所有的配置文件都保存在了本地</p>
+<p>查看所有配置：git config -l</p>
+<p>查看系统配置：git config --system --list</p>
+<p>查看本地配置：git config --global --list</p>
+<p>Git相关的配置文件：</p>
+<ul>
+<li>
+<p>Git\etc\gitconfig:Git安装目录下的gitconfig :system系统级</p>
+</li>
+<li>
+<p>C:\User\Administrator\ .gitconfig 只适用于当前登陆用户的配置 :global全局</p>
+</li>
+</ul>
+<p>这里可以直接编辑配置文件，通过命令设置后会响应到这里</p>
+<p>当安装好Git之后首先需要设置用户名和email地址，因为每次提交Git都会使用该信息，它会被永远嵌入到你的提交中</p>
+<pre><code class="language-c">git config --global user.name &quot;Sirius&quot;
+
+git config --global user.email &quot;18846082950@139.com&quot;
+</code></pre>
+<p>配置好的本地信息：</p>
+<pre><code>[user]
+	name = Sirius
+	email = 18846082950@139.com
+</code></pre>
+<h2 id="三-核心理论">三、核心理论</h2>
+<h3 id="工作区域">工作区域</h3>
+<p>Git本地有三个工作区域：工作目录（Working Directory）、暂存区（Stage/Index）、资源库（Repository或Git Directory）</p>
+<p>如果再加上远程的git仓库（Remote Directory）就可以分为四个工作区域，文件在这四个区域之间的转换关系如下：</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\工作区域的转换关系.png" style="zoom:67%;" />
+<ul>
+<li>Workspace：工作区，就是你平时存放项目代码的地方</li>
+<li>Index / Stage：暂存区，用于临时存放你的改动，它本质上只是一个文件，保存即将提交到文件列表信息</li>
+<li>Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本</li>
+<li>Remote：远程仓库，托管代码的服务器（例如github和gitee），可以简单的认为是你项目组中的一台电脑用于远程数据交换</li>
+</ul>
+<p>本地的三个区域确切的说应该是git仓库中HEAD指向的版本：</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\本地区域.webp" style="zoom:50%;" />
+<ul>
+<li>Directory：使用Git管理的一个目录，也就是一个仓库，包含我们的工作空间和Git的管理空间</li>
+<li>WorkSpace：需要通过Git进行版本控制的目录和文件，这些目录和文件组成了工作空间</li>
+<li>.git：存放Git管理信息的目录，初始化仓库的时候自动创建（项目中一个隐藏文件夹）</li>
+<li>Index/Stage：暂存区，或者叫待提交更新区，在提交进入repo之前，我们可以把所有的更新放在暂存区</li>
+<li>Local Repo：本地仓库，一个存放在本地的版本库；HEAD会只是当前的开发分支（branch）</li>
+<li>Stash：隐藏，是一个工作状态保存栈，用于保存/恢复WorkSpace中的临时状态</li>
+</ul>
+<h3 id="工作流程">工作流程</h3>
+<p>git的工作流程一般是这样的：</p>
+<ol>
+<li>在工作目录中添加、修改文件（git add.）</li>
+<li>将需要进行版本管理的文件放入暂存区域（git commit）</li>
+<li>将暂存区域的文件提交到git仓库</li>
+</ol>
+<p>因此git管理的文件有三种状态：已修改（modified）、已暂存（staged）、已提交（committed）</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\工作流程.webp" style="zoom:50%;" />
+<h2 id="四-项目搭建">四、项目搭建</h2>
+<p>1、创建工作目录与常用指令</p>
+<p>工作目录（WorkSpace）一般就是你希望Git帮助你管理的文件夹，可以是你项目的目录，也可以是一个空目录，建议不要有中文</p>
+<p>日常使用只需要记住以下六个命令：</p>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\常用指令.png" style="zoom:50%;" />
+<p>2、本地仓库搭建</p>
+<p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库</p>
+<pre><code>创建全新的仓库：
+1.创建全新的仓库，需要使用GIT管理的项目的根目录执行
+ #在当前目录新建一个Git代码库
+ $ git init
+
+2.执行后可以看到，仅仅在项目目录中多出一个.git目录，关于版本的所有信息都在这个目录里面
+</code></pre>
+<pre><code>克隆远程的仓库：
+1.另一种方式就是克隆远程仓库，由于是将远程服务器上的仓库完全镜像一份至本地
+ #克隆一个项目和它的整个完整代码历史（版本信息）
+ $ git clone[url]
+ 
+2.去gitee或者github上克隆一个测试
+</code></pre>
+<h2 id="五-文件操作">五、文件操作</h2>
+<p>1、文件的四种状态</p>
+<p>版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没有提交上</p>
+<ul>
+<li>Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库, 不参与版本控制. 通过git add 状态变为Staged.</li>
+<li>Unmodify: 文件已经入库, 未修改, 即版本库中的文件快照内容与文件夹中完全一致. 这种类型的文件有两种去处, 如果它被修改, 而变为Modified. 如果使用git rm移出版本库, 则成为Untracked文件</li>
+<li>Modified: 文件已修改, 仅仅是修改, 并没有进行其他的操作. 这个文件也有两个去处, 通过git add可进入暂存staged状态, 使用git checkout 则丢弃修改过, 返回到unmodify状态, 这个git checkout即从库中取出文件, 覆盖当前修改 !</li>
+<li>Staged: 暂存状态. 执行git commit则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为Unmodify状态. 执行git reset HEAD filename取消暂存, 文件状态为Modified</li>
+</ul>
+<p>2、查看文件状态</p>
+<p>上面的文件的四种状态，可以通过如下命令进行查看：</p>
+<pre><code class="language-bash">git status [filename]：查看指定文件的状态
+
+git status：查看所有文件的状态
+
+git add. ：添加所有文件到暂存区
+
+git commit -m &quot;消息内容&quot;：提交暂存区中的内容到本地仓库，-m表示提交信息
+</code></pre>
+<p>3、忽略文件</p>
+<p>有些时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</p>
+<p>在主目录下建立&quot;.gitignore&quot;文件，此文件有如下规则：</p>
+<ul>
+<li>忽略文件中的空行或以井号（#）开始的行将会被忽略</li>
+<li>可以使用Linux通配符。例如：星号（*）代表任意多个字符，问号（？）代表一个字符，方括号（[abc]）代表可选字符范围，大括号（{string1,string2,...}）代表可选的字符串等</li>
+<li>如果名称的最前面有一个感叹号（!），表示例外规则，将不被忽略</li>
+<li>如果名称的最前面是一个路径分隔符（/），表示要忽略的文件在此目录下，而子目录中的文件不忽略。</li>
+<li>如果名称的最后面是一个路径分隔符（/），表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）</li>
+</ul>
+<pre><code class="language-bash">#为注释
+
+*.txt 		 #忽略所有.txt结尾的文件
+！lib.txt	#但是lib.txt除外
+/temp		 #仅忽略项目根目录下的TODO文件，不包含其他目录temp
+buid/		 #忽略build/目录下的所有文件
+doc/*.txt	 #会忽略doc/notes.txt但是不包括doc/server/arch.txt
+</code></pre>
+<h2 id="六-使用码云">六、使用码云</h2>
+<p>github虽然资源丰富，但是使用起来较慢，国内可以使用码云</p>
+<p>使用步骤：</p>
+<p>1、注册码云，完善个人信息</p>
+<p>2、设置本机绑定SSH公玥，实现免密码登陆</p>
+<p>3、将公玥信息public key添加到码云账户中即可</p>
+<p>4、使用码云创建一个自己的仓库</p>
+<h2 id="七-idea集成git">七、IDEA集成Git</h2>
+<p>1、新建项目，绑定git</p>
+<p>一种方式是可以将远程的git文件目录拷贝到项目中即可</p>
+<p>2、修改文件，使用IDEA操作git</p>
+<ul>
+<li>添加到暂存区</li>
+<li>commit提交</li>
+<li>push到远程仓库</li>
+</ul>
+<p>3、提交测试</p>
+<p>说明：Git分支</p>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5C18846%5CDesktop%5CSSM%E6%80%BB%E7%BB%93%5CGithub%E5%9B%BE%E7%89%87%5Cgit%E5%88%86%E6%94%AF.webp" alt="" loading="lazy"></figure>
+<img src="C:\Users\18846\Desktop\SSM总结\Github图片\git分支2.png" style="zoom:67%;" />
+<p>git分支中的常用命令：</p>
+<pre><code class="language-bash"># 列出所有本地分支
+git branch
+
+# 列出所有远程分支
+git branch -r
+
+# 新建一个分支，但依然停留在当前分支
+git branch [branch-name]
+
+# 新建一个分支，并切换到该分支
+git checkout -b [branch]
+
+# 合并指定分支到当前分支
+$ git merge [branch]
+
+# 删除分支
+$ git branch -d [branch-name]
+
+# 删除远程分支
+$ git push origin --delete [branch-name]
+$ git branch -dr [remote/branch]
+</code></pre>
+<p>master主分支应该非常稳定，一般用来发布新版本，而不是在上面工作，工作中一般使用新建的dev分支，工作完之后，比如在上面发布或者dev分支代码稳定后可以合并到主分支master上来</p>
 ]]></content>
     </entry>
 </feed>
